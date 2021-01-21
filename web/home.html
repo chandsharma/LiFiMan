@@ -1,0 +1,161 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>LIFiMan</title><!DOCTYPE html>
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="/eel.js"></script>
+
+</head>
+  <body>
+    <!--  -->
+    <div class="newover">
+    <div class="login-wrap">
+        <img class="cancelsvg" src="cancel.svg" onclick="closepass()"></img>
+      <div class="login-html">
+
+        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">ADD NETWORK</label>
+        <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
+        <div class="login-form">
+          <div class="sign-in-htm">
+            <div id="netnamenet" class="group">
+              <label for="user" class="label" placeholder="SSID">Network Name / SSID</label>
+              <input id="user" type="text" class="input" >
+            </div>
+            <div class="group">
+              <label for="pass" class="label">Password</label>
+              <input id="pass" type="password" class="input" data-type="password">
+            </div>
+            <div class="group">
+              <input type="submit" class="button" onclick="connectssid()" value="CONNECT">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--  -->
+    <div class="wrapper">
+      <div class="header">
+        <div>
+          <img src="back.svg" height="30px" width="30px" alt="Back icon here" />
+        </div>
+        <h1>NETWORK CONNECTION</h1>
+        <section>
+        <img id="refbut" class="refrs" src="refresh.svg" height="40px" width="40px" alt="reload icon here" />
+      </section>
+      </div>
+      <div class="menu">
+        <div class="fus">
+        <h1 id="wifiButton">WI-FI</h1>
+      </div>
+      <div class="hus">
+      <h1 id="ethernetButton">ETHERNET</h1>
+    </div>
+
+    </div>
+    <div class="content">
+      <div class="status ethernet">
+        <div class="ethhead">
+        <h1>ETHERNET INFORMATION</h1>
+      </div>
+      <div class="loader">Loading...</div>
+        <div class="status__header">
+        <!-- <h1 id="ethStatus"></h1>
+        <h1 id="ethName"></h1> -->
+                <div class="courses-container">
+                <div class="course">
+                <div class="course-preview">
+                <h6>STATE</h6>
+                <h2 id="ethustat">UNAVAILABLE</h2>
+                </div>
+                <div class="course-info">
+                <!-- <div class="progress-container">
+                <div class="progress"></div>
+                <span class="progress-text">
+                  94
+                </span>
+                </div>
+                <h6>SIGNAL</h6> -->
+                <h2 id="ethuname">ETHERNET</h2>
+                <!-- <button class="btn">Continue</button> -->
+                </div>
+                </div>
+                </div>
+      </div>
+      </div>
+      <div class="status wifi">
+        <div class="ethhead">
+        <h1>WIFI INFORMATION</h1>
+        </div>
+          <div id="wifiConnect" onclick="wifion()">
+          <h1>Turn Wi-Fi ON</h1>
+          <!-- <div class="loader">Loading...</div> -->
+</div>
+          <div id="fltu"></div>
+          <h1 class="shtn" onclick="autoconnect()">AUTO-CONNECT</h1>
+          <button id="disc" class="btn" onclick="disconnect()">DISCONNECT</button>
+        <div class="status__header">
+
+          <!-- <h1 id="wifiStatus"></h1>
+          <h1 id="wifiName"><h1> -->
+            <div class="courses-container">
+            <div class="course">
+            <div class="course-preview">
+            <h6>STATE</h6>
+            <h2 id="wistat">NOT CONNECTED</h2>
+
+            </div>
+            <div class="course-info">
+            <!-- <div class="progress-container">
+            <div class="progress"></div>
+            <span class="progress-text">
+              94
+            </span>
+            </div>
+            <h6>SIGNAL</h6> -->
+            <h2 id="winame">WIFI (WLAN0)</h2>
+
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="avalDevices">
+          <h1>AVAILABLE NETWORKS </h1>
+          <div class="lfoader">Loading...</div>
+          <div class="lstatus__header">
+          <!-- <ul id="devicesContainer"></ul>
+                          <div class="cour-container">
+                          <div class="cour">
+                          <div class="cour-preview">
+                          <h5 >WIFI NETQWORK NAMW</h5>
+
+                          </div>
+                          <div class="cour-info">
+                          <div class="prog-container">
+                          <div class="prog"></div>
+                          <span class="prog-text">94</span>
+                          </div>
+
+                          <div class="lin">
+                          <h4 class="intspedd">57 Gbps</h4>
+                          <span >.</span>
+                          <h4>WPA2</h4>
+                      </div>
+
+                          </div>
+                          </div>
+                          </div> -->
+        </div>
+
+
+
+      </div>
+    </div>
+
+  </div>
+      <h1 id="feedback"></h1>
+    </div>
+  </body>
+
+      <script type="text/javascript" src="main.js"></script>
+</html>
