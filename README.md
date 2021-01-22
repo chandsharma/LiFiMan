@@ -30,7 +30,7 @@ Works on **Raspberry Pi**
 - Works on Raspberry Pi
 
 ## INSTALLATION AND REQUIREMENTS
-- Clone Repo
+- Clone this Repo
 - `pip install eel` Refrence at [EEL PyPi Page](https://pypi.org/project/Eel/#:~:text=Eel%20is%20a%20little%20Python,from%20Javascript%2C%20and%20vice%20versa.)
 - [Python3](https://www.python.org/) Required
 
