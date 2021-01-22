@@ -10,13 +10,12 @@ Works on **Raspberry Pi**
 <img src="https://github.com/chandsharma/LiFiMan/blob/main/Readme_resources/wifi_off_airplanemode.png" width="200px" height="300px">
   </p>
   
-#### CONNECTED Wi-Fi / AVAILABLE NETWORKS
+#### CONNECTED Wi-Fi / AVAILABLE NETWORKS / PASSWORD ENTRY FOR ENCRYPTED NETWORKS
   <p float="left">
   <img src="https://github.com/chandsharma/LiFiMan/blob/main/Readme_resources/wifi_main_connected.png" width="200px" height="300px">
   <img src="https://github.com/chandsharma/LiFiMan/blob/main/Readme_resources/signal_indicator.png" width="200px" height="300px">
-  </p>
-#### PASSWORD ENTRY FOR ENCRYPTED NETWORKS
   <img src="https://github.com/chandsharma/LiFiMan/blob/main/Readme_resources/encryption_password.png" width="200px" height="300px">
+  </p>
   
 ## FEATURES
 - Wired and Wireless Network Manager
