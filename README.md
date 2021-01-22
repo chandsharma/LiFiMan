@@ -5,7 +5,7 @@ Works on **Raspberry Pi**
 
 ## USER INTERFACE
 - ### ETHERNET / WIRED CONNECTION
-<img src="https://github.com/chandsharma/LiFiMan/blob/main/Readme_resources/ethernet_menu.png" width="50%" height="50%">
+<img src="https://github.com/chandsharma/LiFiMan/blob/main/Readme_resources/ethernet_menu.png" width="20px" height="30px">
  - ![alt text](https://github.com/chandsharma/LiFiMan/blob/main/Readme_resources/ethernet_menu.png?s=10)
 - ### Wi-Fi / WIRELESS CONNECTION
  - #### Wi-Fi OFF / AIRPLANE MODE ON
