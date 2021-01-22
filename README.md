@@ -6,15 +6,14 @@ Works on **Raspberry Pi**
 ## USER INTERFACE
 - ### ETHERNET / WIRED CONNECTION
 <img src="https://github.com/chandsharma/LiFiMan/blob/main/Readme_resources/ethernet_menu.png" width="200px" height="300px">
- - ![alt text](https://github.com/chandsharma/LiFiMan/blob/main/Readme_resources/ethernet_menu.png?s=10)
 - ### Wi-Fi / WIRELESS CONNECTION
  - #### Wi-Fi OFF / AIRPLANE MODE ON
-  - ![alt text](https://github.com/chandsharma/LiFiMan/blob/main/Readme_resources/wifi_off_airplanemode.png?raw=true)
+  - <img src="https://github.com/chandsharma/LiFiMan/blob/main/Readme_resources/wifi_off_airplanemode.png" width="200px" height="300px">
  - #### CONNECTED Wi-Fi / AVAILABLE NETWORKS
-  - ![alt text](https://github.com/chandsharma/LiFiMan/blob/main/Readme_resources/wifi_main_connected.png?raw=true)
-  - ![alt text](https://github.com/chandsharma/LiFiMan/blob/main/Readme_resources/signal_indicator.png?raw=true)
+  - <img src="https://github.com/chandsharma/LiFiMan/blob/main/Readme_resources/wifi_main_connected.png" width="200px" height="300px">
+  - <img src="https://github.com/chandsharma/LiFiMan/blob/main/Readme_resources/signal_indicator.png" width="200px" height="300px">
  - #### PASSWORD ENTRY FOR ENCRYPTED NETWORKS
-  - ![alt text](https://github.com/chandsharma/LiFiMan/blob/main/Readme_resources/encryption_password.png?raw=true)
+  - <img src="https://github.com/chandsharma/LiFiMan/blob/main/Readme_resources/encryption_password.png" width="200px" height="300px">
   
 ## FEATURES
 - Wired and Wireless Network Manager
