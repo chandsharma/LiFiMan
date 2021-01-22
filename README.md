@@ -4,11 +4,12 @@ LIFIMAN is **Linux based Wi-Fi and Network Manager**. It has a **cool GUI** for 
 Works on **Raspberry Pi**
 
 ## USER INTERFACE
-### ETHERNET / WIRED CONNECTION
+### ETHERNET / WIRED CONNECTION and Wi-Fi / WIRELESS CONNECTION MENU
+ <p float="left">
 <img src="https://github.com/chandsharma/LiFiMan/blob/main/Readme_resources/ethernet_menu.png" width="200px" height="300px">
-### Wi-Fi / WIRELESS CONNECTION
-#### Wi-Fi OFF / AIRPLANE MODE ON
-  <img src="https://github.com/chandsharma/LiFiMan/blob/main/Readme_resources/wifi_off_airplanemode.png" width="200px" height="300px">
+<img src="https://github.com/chandsharma/LiFiMan/blob/main/Readme_resources/wifi_off_airplanemode.png" width="200px" height="300px">
+  </p>
+  
 #### CONNECTED Wi-Fi / AVAILABLE NETWORKS
   <p float="left">
   <img src="https://github.com/chandsharma/LiFiMan/blob/main/Readme_resources/wifi_main_connected.png" width="200px" height="300px">
