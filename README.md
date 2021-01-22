@@ -40,7 +40,7 @@ Works on **Raspberry Pi**
 `python3 lifiman.py`
 
 ## DEVs
-[@chandsharma](github.com/chandsharma)
-[@TheLazarus](github.com/TheLazarus)
+[@chandsharma](https://github.com/chandsharma)
+[@TheLazarus](https://github.com/TheLazarus)
 
 ## TO MAKE IT COOL / ADD MORE FEATURES / CONTRIBUTE / REMOVE BUGS FEEL FREE TO MAKE A PULL REQUEST :) 
