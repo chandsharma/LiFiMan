@@ -1,13 +1,13 @@
 function callback(calue){
   document.querySelector(".loader").style.display = "none";
   document.querySelector(".status__header").style.display = "block";
-  console.log(calue);
+  // console.log(calue);
   document.querySelector(".status.ethernet").style.pointerEvents ="auto";
   document.querySelector(".status.ethernet").style.opacity = 1;
   let ethConfig = calue.split(",");
-  console.log(ethConfig);
+  // console.log(ethConfig);
   if (ethConfig[1] === "unavailable"){
-    console.log("not available");
+    // console.log("not available");
     document.getElementById("ethustat").innerHTML = "UNAVAILABLE";
     document.getElementById("ethuname").innerHTML = "NOT CONNECTED";
   }
@@ -15,26 +15,19 @@ function callback(calue){
     document.getElementById("ethustat").innerHTML = `${ethConfig[1].toUpperCase()}`;
     document.getElementById("ethuname").innerHTML = `${ethConfig[2]}`;
   }
-  // document.getElementById("ethStatus").innerHTML = `STATUS - ${ethConfig[1]}`;
-  // document.getElementById("ethName").innerHTML = `ETHERNET INTERFACE - ${ethConfig[2]}`;
 }
 
 
 function wifiDevices(devices) {
-  console.log(devices)
+  // console.log(devices)
   document.querySelector(".lfoader").style.display = "none";
   document.querySelector(".lstatus__header").style.display = "block";
   document.getElementsByClassName("lstatus__header")[0].innerHTML = '';
   let id = 'a';
   devices.forEach(index => {
-    // let ul = document.createElement("ul");
-    // ul.setAttribute("id","devices");
-
     createCard(index,id);
 
 id = id+1;
-
-// document.getElementById("devicesContainer").appendChild(ul);
   })
 }
 function createCard(index,id) {
@@ -84,11 +77,6 @@ index = index.split(",");
   lin.appendChild(intspedd);
   lin.appendChild(span);
   lin.appendChild(encryption);
-
-
-
-
-
 let progStyle = document.createElement("style");
 progStyle.innerHTML = `.prog.${id}::after {
 	border-radius: 3px;
@@ -101,8 +89,6 @@ progStyle.innerHTML = `.prog.${id}::after {
 	width: ${index[3]}%;
 }`;
 document.head.appendChild(progStyle);
-
-
 wifiName.innerHTML = index[0];
 intspedd.innerHTML = index[1];
 if(index[2] == "--"){
@@ -114,23 +100,21 @@ else {
   connectOverlay.classList.add(index[2]);
 }
 progText.innerHTML = index[3];
-
-
 document.getElementsByClassName("lstatus__header")[0].appendChild(mainContainer);
 
 connectOverlay.addEventListener("click", function(event) {
   document.getElementById("netnamenet").style.display = "none";
 //console.log(event);
-console.log(event.srcElement.className.split(" ")[2]);
-console.log(event.srcElement.className.split(" ")[3]);
+// console.log(event.srcElement.className.split(" ")[2]);
+// console.log(event.srcElement.className.split(" ")[3]);
 if(event.srcElement.className.split(" ")[3] === "yes")
 {
-  console.log("already connected");
+  // console.log("already connected");
   feedback("Already Connected");
 }
 else{
 if(event.srcElement.className.split(" ")[4] === "Open"){
-  console.log("open network");
+  // console.log("open network");
   feedback("Connecting");
   eel.connect_ssid(event.srcElement.className.split(" ")[2],0)(conres);
 }
@@ -145,7 +129,7 @@ else{
 })
 }
 function conres(v){
-  console.log(v);
+  // console.log(v);
   if(v === 2){
     feedback("Connected Successfully")
   }
@@ -167,7 +151,7 @@ function connectssid(){
   document.querySelector(".newover").style.display="none";
   let ssid = document.getElementById("user").value;
   let pass = document.getElementById("pass").value;
-  console.log(ssid,pass);
+  // console.log(ssid,pass);
   eel.connect_ssid(ssid,pass)(conres);
   document.getElementById("user").value = '';
   document.getElementById("pass").value = '';
@@ -186,17 +170,13 @@ function dummy(varu){
 }
 function calling(value){
 
-  console.log(value.split(',')[1],"happy");
+  // console.log(value.split(',')[1],"happy");
   document.querySelector(".shtn").style.display = "none";
   document.querySelector(".status.wifi .status__header").style.display = "flex";
   if(value.split(',')[1] === "disconnected" ){
-    //eel.autoconnect('wlan0')(dummy);
-    //eel.wifi_state()(calling);
     document.querySelector(".shtn").style.display = "block";
   }
   else if(value.split(',')[1] === "unavailable" ){
-    //
-    //console.log("unavailable")
       document.querySelector(".status.wifi .status__header").style.display = "none";
     eel.autoconnect('wlan0')(dummy);
     eel.wifi_state()(calling);
@@ -205,35 +185,36 @@ function calling(value){
   else if(value.split(',')[1] === "connecting" ){
     document.querySelector(".status.wifi .status__header").style.display = "block";
     //
+    feedback("CONNECTING");
     document.querySelector(".status__header").style.display = "block";
   document.querySelector(".status.wifi").style.pointerEvents ="auto";
   document.querySelector(".status.wifi").style.opacity = 1;
   let wifiConfig = value.split(",");
-  console.log(wifiConfig);
+  // console.log(wifiConfig);
   document.getElementById("wistat").innerHTML = ` ${wifiConfig[1].toUpperCase()}`;
   document.getElementById("winame").innerHTML = ` ${wifiConfig[2]}`;
-  console.log(wifiConfig[2]);
+  // console.log(wifiConfig[2]);
   eel.wifi_state()(calling);
   }
   else{
+    feedback("CONNECTED");
     document.querySelector(".status.wifi .status__header").style.display = "block";
-  //eel.wifi_state()(calling);
   document.querySelector(".btn").style.display = "block";
     document.querySelector(".status__header").style.display = "block";
   document.querySelector(".status.wifi").style.pointerEvents ="auto";
   document.querySelector(".status.wifi").style.opacity = 1;
   let wifiConfig = value.split(",");
-  console.log(wifiConfig);
+  // console.log(wifiConfig);
   document.getElementById("wistat").innerHTML = ` ${wifiConfig[1].toUpperCase()}`;
   document.getElementById("winame").innerHTML = ` ${wifiConfig[2]}`;
-  console.log(wifiConfig[2]);
+  // console.log(wifiConfig[2]);
 }
 
 }
 function autoconnect(){
   document.querySelector(".status__header").style.display = "none";
   document.querySelector(".lfoader").style.display = "block";
-  console.log("autoconnect");
+  // console.log("autoconnect");
   eel.autoconnect('wlan0')(dummy);
   eel.wifi_state()(calling);
   document.querySelector(".lfoader").style.display = "none";
@@ -271,7 +252,7 @@ function wifion(){
   document.querySelector(".status__header").style.display = "block";
 }
 function wifistatuscall(value){
-  console.log(value);
+  // console.log(value);
 
   //value = 3;
   document.querySelector(".btn").style.display = "none";
@@ -284,16 +265,10 @@ function wifistatuscall(value){
     document.querySelector(".status.wifi .status__header").style.display = "none";
     feedback("NO WIFI CONNECTION");
     document.getElementById("wifiConnect").style.display="block";
-    //eel.list_available_wifi()(wifiDevices);
-    //wifi is off
-    //wifi is off
-   //show on UI
-   //put a button to turn on <wifi_on()>
   }
   else if (value == 0 ){
 
       manageContent("WI-FI");
-      //document.querySelector(".btn").style.display = "block";
     document.getElementById("wifiConnect").style.display="none";
     document.querySelector(".status__header").style.display = "none";
     document.querySelector(".lfoader").style.display = "block";
@@ -304,21 +279,15 @@ function wifistatuscall(value){
   }
   else{
       manageContent("WI-FI");
-      //document.querySelector(".btn").style.display = "block";
     document.getElementById("wifiConnect").style.display="none";
     feedback("CONNECTED");
     document.querySelector(".status__header").style.display = "none";
     document.querySelector(".lfoader").style.display = "block";
     eel.list_available_wifi()(wifiDevices);
-
-    //show details
-
   }
 }
 eel.ethernet_state()(callback);
 eel.wifi_state()(calling);
-//eel.wifi_status()(wifistatuscall);
-
 const menu = ["WI-FI", "ETHERNET"];
 
 function feedback(text) {
@@ -329,10 +298,8 @@ function feedback(text) {
   document.querySelector("#feedback").innerHTML = text;
 }
 
-
 const manageContent = (option) => {
-
-  console.log("CLicked");
+  // console.log("CLicked");
   if(option === "WI-FI") {
     eel.wifi_state()(calling);
     document.querySelector(".status.ethernet").style.display = "none";
@@ -383,10 +350,10 @@ document.getElementById("ethernetButton").addEventListener("click", function() {
 });
 
 document.getElementById("refbut").addEventListener("click",function(){
-  console.log("refresh");
+  // console.log("refresh");
   window.location.href="home.html";
 });
 
 function wind(){
-  console.log("working");
+  // console.log("working");
 }
