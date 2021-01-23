@@ -185,7 +185,7 @@ function calling(value){
   else if(value.split(',')[1] === "connecting" ){
     document.querySelector(".status.wifi .status__header").style.display = "block";
     //
-    feedback("CONNECTING");
+    //feedback("CONNECTING");
     document.querySelector(".status__header").style.display = "block";
   document.querySelector(".status.wifi").style.pointerEvents ="auto";
   document.querySelector(".status.wifi").style.opacity = 1;
