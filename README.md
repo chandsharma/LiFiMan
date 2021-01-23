@@ -32,6 +32,8 @@ Works on **Raspberry Pi**
   </p>
   
 ## INSTALLATION AND REQUIREMENTS
+Uses `nmcli` terminal tool. *If your system do not have `nmcli` pre-installed follow [this gist](https://gist.github.com/jjsanderson/ab2407ab5fd07feb2bc5e681b14a537a) to install.*
+Type `nmcli d wifi list` to check if it is installed. *Note: If wifi network is available in range and you can't find any wifi name on terminal screen. Follow [this gist](https://gist.github.com/jjsanderson/ab2407ab5fd07feb2bc5e681b14a537a) to setup.* Functionalities remains unchainged for a common user.
 - Clone this Repo
 - `pip install eel` Refrence at [EEL PyPi Page](https://pypi.org/project/Eel/#:~:text=Eel%20is%20a%20little%20Python,from%20Javascript%2C%20and%20vice%20versa.)
 - [Python3](https://www.python.org/) Required
