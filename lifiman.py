@@ -54,7 +54,7 @@ def wifi_on():
 #list available wifi networks
 @eel.expose
 def list_available_wifi():
-    term = pexpect.spawn('nmcli d wifi list', encoding='utf-8',timeout=5)
+    term = pexpect.spawn('nmcli -f in-use,bssid,ssid,mode,chan,rate,signal,bars,security d wifi list', encoding='utf-8',timeout=5)
     term.setwinsize(300,400)
     ret = term.expect([pexpect.TIMEOUT,pexpect.EOF])
     p=term.before
