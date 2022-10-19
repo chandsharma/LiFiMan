@@ -48,4 +48,6 @@ Type `nmcli d wifi list` in terminal to check if it is installed. *Note: If wifi
 [@chandsharma](https://github.com/chandsharma)
 [@TheLazarus](https://github.com/TheLazarus)
 
-## TO MAKE IT COOL / ADD MORE FEATURES / CONTRIBUTE / REMOVE BUGS FEEL FREE TO MAKE A PULL REQUEST :) 
+## Contribution
+Project is open for contribution. Any type of contribution is welcome.
+*TO MAKE IT COOL / ADD MORE FEATURES / CONTRIBUTE / REMOVE BUGS FEEL FREE TO MAKE A PULL REQUEST :)*
